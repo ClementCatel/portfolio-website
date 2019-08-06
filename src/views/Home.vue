@@ -1,35 +1,37 @@
 <template>
   <v-app>
     <v-app-bar app height="73" elevate-on-scroll >
-      <v-avatar size="36" class="ml-10 mr-5">
+      <!-- <v-avatar size="36" >
         <img src="../assets/images/clementcatel.jpg" alt="clément-catel-web-logo">
-      </v-avatar>
-      <v-toolbar-title class="font-weight-bold justify-center">CLEMENT CATEL</v-toolbar-title>
+      </v-avatar> -->
+      <v-toolbar-title :class="{'px-10' : $vuetify.breakpoint.mdAndUp}" v-text="title"></v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items class="px-5 mx-10 hidden-sm-and-down">
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn text @click="goTo('#about-me')">à propos de moi</v-btn>
         <v-btn text @click="goTo('#portfolio')">Portfolio</v-btn>
         <v-btn text @click="goTo('#contact')">Contact</v-btn>
       </v-toolbar-items>
 
-      <v-menu class="hidden-md-and-up">
-        <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+      <v-menu >
+        <template v-slot:activator="{ on }">
+          <v-app-bar-nav-icon v-on="on" class="hidden-md-and-up"></v-app-bar-nav-icon>
+        </template>
         <v-list>
-          <v-list-tile @click="goTo('#about-me')">
-            <v-list-tile-title>à propos de moi</v-list-tile-title>
-          </v-list-tile>
-          <v-list-tile @click="goTo('#portfolio')">
-            <v-list-tile-title>Portfolio</v-list-tile-title>
-          </v-list-tile>
-          <v-list-tile @click="goTo('#contact')">
-            <v-list-tile-title>Contact</v-list-tile-title>
-          </v-list-tile>
+          <v-list-item @click="goTo('#about-me')">
+            <v-list-item-title>A propos de moi</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="goTo('#portfolio')">
+            <v-list-item-title>Portfolio</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="goTo('#contact')">
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-menu>
-
     </v-app-bar>
+
     <v-content>
       <section>
         <v-parallax src="../assets/images/hero.svg" height="675">
@@ -60,7 +62,6 @@
 
       <section id="about-me">
         <v-layout
-          row
           wrap
           class="my-12"
           align-center
@@ -76,7 +77,7 @@
               <v-layout row wrap justify-center>
                 <v-flex xs12 md8>
                   <v-card flat class="transparent">
-                    <v-layout row wrap justify-center>
+                    <v-layout justify-center>
                       <v-avatar
                         size="150"
                         class="elevation-8"
@@ -90,7 +91,7 @@
                     <!-- <v-card-title primary-title class="layout row justify-center mb-8">
                       <div class="display-1">Clément Catel</div>
                     </v-card-title> -->
-                    <v-card-text class="body-1 mt-5 px-6">
+                    <v-card-text class="body-1 mt-5">
                       <p class="title font-weight-light">Passionné d'informatique et de design depuis maintenant plusieurs années, j'ai décidé d'orienter mon parcours 
                       professionnel vers le monde de l'informatique et du développement Web.</p>
                       
@@ -113,18 +114,19 @@
       </section>
 
       <section id="portfolio">
-        <v-layout row align-center justify-center>
+        <v-layout row align-center justify-center class="mx-0">
           <v-flex xs10 sm6 class="my-5 mb-12">
             <div class="text-center">
               <h3 class="display-3">Portfolio</h3>
             </div>
           </v-flex>
           <v-flex xs12 sm8>
-            <v-container grid-list-sm fluid>
-              <v-layout wrap justify-center>
+            <v-container grid-list-sm fluid class="px-0">
+              <v-layout wrap justify-center class="mx-0">
                 <v-flex
                   v-for="(project, index) in projects" :key="index"
                   xs10
+                  md4
                   d-flex
                   child-flex
                 >
@@ -203,7 +205,7 @@
       <section id="contact">
         <v-layout
           row
-          class="my-12"
+          class="my-12 mx-0"
           align-center
           justify-center
         >
@@ -213,7 +215,7 @@
             </div>
           </v-flex>
           <v-flex xs12>
-            <v-layout row justify-center>
+            <v-layout row justify-center class="mx-0">
               <v-flex xs10 md6>
                 <form>
                 <v-text-field
@@ -277,10 +279,10 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
+      title: "Clément Catel",
       projects: [
         {
           image: require('../assets/images/personnal-site.png'),
@@ -320,6 +322,7 @@ export default {
 
 .v-toolbar__title {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -335,4 +338,3 @@ h1 {
   opacity: 0.8;
 }
 </style>
-
