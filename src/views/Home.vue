@@ -112,12 +112,12 @@
 
       <section id="portfolio">
         <v-layout row align-center justify-center class="mx-0">
-          <v-flex xs10 sm6 class="my-5 mb-12">
+          <v-flex xs10 sm8 class="my-5 mb-12">
             <div class="text-center">
               <h3 class="display-3">Portfolio</h3>
             </div>
           </v-flex>
-          <v-flex xs12 sm8>
+          <v-flex xs12 sm10 md8 lg6>
             <v-container grid-list-sm fluid class="px-0">
               <v-layout wrap justify-center class="mx-0">
                 <v-flex
@@ -153,7 +153,7 @@
                                 <p class="mt-4 subheading text-left">{{ project.title }}</p>
 
                                 <div>
-                                  <p class="body-1 font-weight-light text-left">
+                                  <p class="body-1 font-weight-light text-left mb-0">
                                     {{ project.description }}
                                   </p>
                                 </div>
@@ -296,14 +296,14 @@ export default {
         {
           image: require('../assets/images/resto-fontaines.png'),
           title: "Restaurant Le F Des Fontaines",
-          description: "Site réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+          description: "Réalisé lors de mon stage chez AMFreelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
           link: "https://restaurant-les-fontaines.com/",
         },
         {
           image: require('../assets/images/nsc.png'),
           title: "Noël Sciage Carrotage",
-          description: "Site réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+          description: "Réalisé lors de mon stage chez AMFreelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
           link: "https://noelsciagecarottage.fr/",
         },
