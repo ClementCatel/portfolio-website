@@ -1,9 +1,6 @@
 <template>
   <v-app>
     <v-app-bar app height="73" elevate-on-scroll >
-      <!-- <v-avatar size="36" >
-        <img src="../assets/images/clementcatel.jpg" alt="clément-catel-web-logo">
-      </v-avatar> -->
       <v-toolbar-title :class="{'px-10' : $vuetify.breakpoint.mdAndUp}" v-text="title" @click="goTo('#hero')"></v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -219,25 +216,25 @@
           <v-flex xs12>
             <v-layout row justify-center class="mx-0">
               <v-flex xs10 md6>
-                <form>
-                <v-text-field
-                  label="Nom"
-                  type="text"
-                  solo
-                ></v-text-field>
-                <v-text-field
-                  label="Email"
-                  type="email"
-                  solo
-                ></v-text-field>
-                <v-textarea
-                  solo
-                  name="message"
-                  label="Message"
-                ></v-textarea>
-                <v-layout row justify-center>
-                  <v-btn dark large class="mt-5 elevation-5" color="blue lighten-2" type="submit">Envoyer</v-btn>
-                </v-layout>
+                <form name="contact" method="POST" data-netlify="true">
+                  <v-text-field
+                    label="Nom"
+                    type="text"
+                    solo
+                  ></v-text-field>
+                  <v-text-field
+                    label="Email"
+                    type="email"
+                    solo
+                  ></v-text-field>
+                  <v-textarea
+                    solo
+                    name="message"
+                    label="Message"
+                  ></v-textarea>
+                  <v-layout justify-center>
+                    <v-btn dark large class="mt-5 elevation-5" color="blue lighten-2" type="submit">Envoyer</v-btn>
+                  </v-layout>
                 </form>
               </v-flex>
             </v-layout>
