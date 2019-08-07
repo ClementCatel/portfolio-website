@@ -216,7 +216,7 @@
           <v-flex xs12>
             <v-layout row justify-center class="mx-0">
               <v-flex xs10 md6>
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" netlify>
                   <v-text-field
                     label="Nom"
                     type="text"
