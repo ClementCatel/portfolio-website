@@ -4,7 +4,7 @@
       <!-- <v-avatar size="36" >
         <img src="../assets/images/clementcatel.jpg" alt="clément-catel-web-logo">
       </v-avatar> -->
-      <v-toolbar-title :class="{'px-10' : $vuetify.breakpoint.mdAndUp}" v-text="title"></v-toolbar-title>
+      <v-toolbar-title :class="{'px-10' : $vuetify.breakpoint.mdAndUp}" v-text="title" @click="goTo('#hero')"></v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -33,7 +33,7 @@
     </v-app-bar>
 
     <v-content>
-      <section>
+      <section id="hero">
         <v-parallax src="../assets/images/hero.svg" height="675">
             <v-layout
               align-center
@@ -101,7 +101,7 @@
 
                       <p class="title font-weight-light">
                         Intégrant <a href="https://www.institut-g4.fr/" target="_blank" class="link">l'institut G4</a> de Paris pour la rentrée 2019, 
-                        et effectuant mon cursus en alternance, je recherche une entreprise dans laquelle je pourrai mettre à profis mes compétences 
+                        et effectuant mon cursus en alternance, je recherche une entreprise dans laquelle je pourrai mettre à profit mes compétences 
                         et enrichir mes connaissances ainsi que mon expérience. 
                       </p>
                     </v-card-text>
@@ -164,6 +164,7 @@
                                 <div class="align-self-center">
                                   <v-btn
                                     v-if="project.sourcelink"
+                                    large
                                     icon
                                     :href="project.sourcelink"
                                     target="_blank"
@@ -171,6 +172,7 @@
                                     <v-icon class="white--text">mdi-code-tags</v-icon>
                                   </v-btn>
                                   <v-btn
+                                    large
                                     icon
                                     :href="project.link"
                                     target="_blank"
@@ -211,7 +213,7 @@
         >
           <v-flex xs10 sm6 class="my-5 mb-12">
             <div class="text-center">
-              <h3 class="display-3">Me Contacter</h3>
+              <h3 class="display-3">Me contacter</h3>
             </div>
           </v-flex>
           <v-flex xs12>
@@ -324,6 +326,7 @@ export default {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .link {
