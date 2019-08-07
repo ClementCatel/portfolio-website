@@ -220,11 +220,13 @@
                   <v-text-field
                     label="Nom"
                     type="text"
+                    name="name"
                     solo
                   ></v-text-field>
                   <v-text-field
                     label="Email"
                     type="email"
+                    name="email"
                     solo
                   ></v-text-field>
                   <v-textarea
