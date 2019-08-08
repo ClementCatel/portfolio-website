@@ -327,7 +327,7 @@ export default {
 .v-toolbar__title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
 }
 
