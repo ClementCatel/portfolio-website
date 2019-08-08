@@ -72,7 +72,7 @@
           <v-flex xs12>
             <v-container>
               <v-layout row wrap justify-center>
-                <v-flex xs12 md8>
+                <v-flex xs12 md8 lg6>
                   <v-card flat class="transparent">
                     <v-layout justify-center>
                       <v-avatar
@@ -81,7 +81,7 @@
                       >
                         <img
                         src="../assets/images/clementcatel.jpg"
-                        alt="responsive-web-design"
+                        alt="clément catel"
                         >
                       </v-avatar>
                     </v-layout>
