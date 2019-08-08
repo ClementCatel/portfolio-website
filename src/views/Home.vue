@@ -117,7 +117,7 @@
               <h3 class="display-3">Portfolio</h3>
             </div>
           </v-flex>
-          <v-flex xs12 sm10 >
+          <v-flex xs12 sm10 md8 xl6>
             <v-container grid-list-sm fluid class="px-0">
               <v-layout wrap justify-center class="mx-0">
                 <v-flex
