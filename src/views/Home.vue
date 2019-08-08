@@ -45,8 +45,8 @@
                   <div class="text-left">
                     <v-btn rounded dark small depressed class="mt-5 text-lowercase" color="rgba(255, 255, 255, 0.1)" href="mailto:clement.catel4@gmail.com"><v-icon left small color="blue lighten-3">mdi-at</v-icon>clement.catel4@gmail.com</v-btn>
                   </div>
-                  <h2 class="display-3 my-5 mt-10 font-weight-light">Clément Catel</h2>
-                  <h1 class="my-5 headline text-left font-weight-light">Apprenti développeur Web</h1>
+                  <h1 class="display-3 my-5 mt-10 font-weight-light">Clément Catel</h1>
+                  <h2 class="my-5 headline text-left font-weight-light">Apprenti développeur Web</h2>
                   
                   <div class="text-left">
                     <v-btn rounded dark large class="mt-5 elevation-5" color="blue lighten-2" @click="goTo('#about-me')">En savoir plus</v-btn>
@@ -89,8 +89,8 @@
                       <div class="display-1">Clément Catel</div>
                     </v-card-title> -->
                     <v-card-text class="body-1 mt-5">
-                      <p class="title font-weight-light">Passionné d'informatique et de design depuis maintenant plusieurs années, j'ai décidé d'orienter mon parcours 
-                      professionnel vers le monde de l'informatique et du développement Web.</p>
+                      <p class="title font-weight-light">Hello! Moi c'est Clément Catel et je suis développeur Web junior. Passionné d'informatique, de nouvelles technologies et de design depuis maintenant plusieurs années, j'ai décidé d'orienter mon parcours 
+                      professionnel vers le monde de l'informatique et plus particulièrement celui du développement Web.</p>
                       
                       <p class="title font-weight-light">Je viens tout juste d'obtenir mon DUT Informatique. Formation durant laquelle j'ai pu acquérir une première expérience 
                       en tant que développeur Web Frontend et Webdesigner aux côtés d'Alexandre Maurouard, au cours d'un stage de 3 mois dans sa société
@@ -98,8 +98,8 @@
 
                       <p class="title font-weight-light">
                         Intégrant <a href="https://www.institut-g4.fr/" target="_blank" class="link">l'institut G4</a> de Paris pour la rentrée 2019, 
-                        et effectuant mon cursus en alternance, je recherche une entreprise dans laquelle je pourrai mettre à profit mes compétences 
-                        et enrichir mes connaissances ainsi que mon expérience. 
+                        et effectuant mon cursus en alternance, je recherche une entreprise dans laquelle je pourrai mettre à profit mes compétences et ma motivation 
+                        mais aussi enrichir mes connaissances ainsi que mon expérience. 
                       </p>
                     </v-card-text>
                   </v-card>
@@ -291,21 +291,21 @@ export default {
         {
           image: require('../assets/images/personnal-site.png'),
           title: "Site Portfolio",
-          description: "Site personnel utilisant le framework Vue.js et Vuetify",
+          description: "Site portfolio personnel utilisant le framework Vue.js avec Vuetify",
           sourcelink: "https://github.com/ClementCatel/personnal-site",
           link: "#",
         },
         {
           image: require('../assets/images/resto-fontaines.png'),
           title: "Restaurant Le F Des Fontaines",
-          description: "Réalisé lors de mon stage chez AMFreelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+          description: "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
           link: "https://restaurant-les-fontaines.com/",
         },
         {
           image: require('../assets/images/nsc.png'),
           title: "Noël Sciage Carrotage",
-          description: "Réalisé lors de mon stage chez AMFreelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+          description: "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
           link: "https://noelsciagecarottage.fr/",
         },
@@ -339,7 +339,7 @@ export default {
   color: black;
 }
 
-h1 {
+h2 {
   opacity: 0.8;
 }
 </style>
