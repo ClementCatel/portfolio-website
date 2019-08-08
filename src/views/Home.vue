@@ -43,13 +43,13 @@
                   class="white--text"
                 >
                   <div class="text-left">
-                    <v-btn dark small depressed class="mt-5 text-lowercase" color="rgba(255, 255, 255, 0.1)" href="mailto:clement.catel4@gmail.com"><v-icon left small color="blue lighten-3">mdi-at</v-icon>clement.catel4@gmail.com</v-btn>
+                    <v-btn rounded dark small depressed class="mt-5 text-lowercase" color="rgba(255, 255, 255, 0.1)" href="mailto:clement.catel4@gmail.com"><v-icon left small color="blue lighten-3">mdi-at</v-icon>clement.catel4@gmail.com</v-btn>
                   </div>
                   <h2 class="display-3 my-5 mt-10 font-weight-light">Clément Catel</h2>
                   <h1 class="my-5 headline text-left font-weight-light">Apprenti développeur Web</h1>
                   
                   <div class="text-left">
-                    <v-btn dark large class="mt-5 elevation-5" color="blue lighten-2" @click="goTo('#about-me')">En savoir plus</v-btn>
+                    <v-btn rounded dark large class="mt-5 elevation-5" color="blue lighten-2" @click="goTo('#about-me')">En savoir plus</v-btn>
                   </div>
                 </v-layout>
               </v-flex>
@@ -117,13 +117,15 @@
               <h3 class="display-3">Portfolio</h3>
             </div>
           </v-flex>
-          <v-flex xs12 sm10 md8 lg6>
+          <v-flex xs12 sm10 >
             <v-container grid-list-sm fluid class="px-0">
               <v-layout wrap justify-center class="mx-0">
                 <v-flex
                   v-for="(project, index) in projects" :key="index"
                   xs10
-                  md4
+                  sm8
+                  md6
+                  lg4
                   d-flex
                   child-flex
                 >
@@ -236,7 +238,7 @@
                     label="Message"
                   ></v-textarea>
                   <v-layout justify-center>
-                    <v-btn dark large class="mt-5 elevation-5" color="blue lighten-2" type="submit">Envoyer</v-btn>
+                    <v-btn dark rounded large class="mt-5 elevation-5" color="blue lighten-2" type="submit">Envoyer</v-btn>
                   </v-layout>
                 </form>
               </v-flex>
