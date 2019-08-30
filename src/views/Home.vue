@@ -274,7 +274,7 @@
             white--text
             xs12
           >
-            {{ new Date().getFullYear() }} — Clément Catel
+            {{ new Date().getFullYear() }} © Clément Catel
           </v-flex>
         </v-layout>
       </v-footer>
