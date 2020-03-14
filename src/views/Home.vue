@@ -118,11 +118,12 @@
                         class="title font-weight-light py-3"
                         data-aos="fade-right"
                       >
-                        Hello! Je suis Clément Catel, développeur Passionné
-                        d'informatique, de nouvelles technologies et de design
-                        depuis plusieurs années, j'ai décidé d'orienter mon
-                        parcours professionnel vers le monde de l'informatique
-                        et plus particulièrement celui du développement Web.
+                        Hello! Je suis Clément Catel, développeur web junior
+                        Passionné d'informatique, de nouvelles technologies et
+                        de design depuis plusieurs années, j'ai décidé
+                        d'orienter mon parcours professionnel vers le monde de
+                        l'informatique et plus particulièrement celui du
+                        développement Web.
                       </p>
 
                       <p
