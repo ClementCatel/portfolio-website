@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.1.2",
@@ -15,8 +16,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.3",
     "css-loader": "^3.2.0",
