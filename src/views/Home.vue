@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app height="73" elevate-on-scroll>
+    <v-app-bar app height="73" elevation="0" color="white">
       <v-toolbar-title
         :class="{ 'px-10': $vuetify.breakpoint.mdAndUp }"
         v-text="title"
@@ -40,7 +40,7 @@
       <section id="hero">
         <v-parallax src="../assets/images/hero.svg" height="675">
           <v-layout align-center justify-center>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm8 md6>
               <v-layout column align-left class="white--text">
                 <div class="text-left">
                   <v-btn
@@ -96,7 +96,7 @@
           <v-flex xs12>
             <v-container>
               <v-layout row wrap justify-center>
-                <v-flex xs12 md8 lg6>
+                <v-flex xs12 sm10 md8 lg6>
                   <v-card flat class="transparent">
                     <v-layout justify-center>
                       <v-avatar
@@ -113,28 +113,22 @@
                     <!-- <v-card-title primary-title class="layout row justify-center mb-8">
                       <div class="display-1">Clément Catel</div>
                     </v-card-title> -->
-                    <v-card-text class="body-1 mt-5">
-                      <p
-                        class="title font-weight-light py-3"
-                        data-aos="fade-right"
-                      >
-                        Hello! Je suis Clément Catel, développeur web junior
+                    <v-card-text class="title mt-5">
+                      <p class="font-weight-light py-3 text-justify">
+                        Hello! Je suis Clément Catel, développeur web junior.
                         Passionné d'informatique, de nouvelles technologies et
                         de design depuis plusieurs années, j'ai décidé
                         d'orienter mon parcours professionnel vers le monde de
                         l'informatique et plus particulièrement celui du
-                        développement Web.
+                        développement web.
                       </p>
 
-                      <p
-                        class="title font-weight-light py-3"
-                        data-aos="fade-left"
-                      >
-                        Je suis titulaire d'un DUT Informatique. Formation
+                      <p class="font-weight-light py-3 text-justify">
+                        Je suis titulaire d'un DUT en Informatique. Formation
                         durant laquelle j'ai pu acquérir une première expérience
                         en tant que développeur Web Frontend et Webdesigner aux
-                        côtés d'Alexandre Maurouard, au cours d'un stage de 3
-                        mois dans sa société
+                        côtés d'Alexandre Maurouard, lors d'un stage de 3 mois
+                        dans sa société : 
                         <a
                           href="https://alexandremaurouard.fr/"
                           target="_blank"
@@ -143,10 +137,7 @@
                         >.
                       </p>
 
-                      <p
-                        class="title font-weight-light py-3"
-                        data-aos="fade-right"
-                      >
+                      <p class="font-weight-light py-3 text-justify">
                         Je prépare actuellement un diplôme de chef de projet SI
                         au sein d'une formation de 3 ans, à
                         <a
@@ -177,8 +168,8 @@
             </div>
           </v-flex>
           <v-flex xs12 sm10 md8 xl6>
-            <v-container grid-list-sm fluid class="px-0">
-              <v-layout wrap justify-center class="mx-0" data-aos="fade-up">
+            <v-container grid-list-sm fluid class="px-0 mb-12">
+              <v-layout wrap justify-center class="mx-0">
                 <v-flex
                   v-for="(project, index) in projects"
                   :key="index"
@@ -203,49 +194,50 @@
                             color="primary"
                             opacity="0.95"
                           >
-                            <v-card-title
+                            <!-- <v-card-title
                               class="title white--text fill-height absolute"
+                            > -->
+                            <v-layout
+                              fill-height
+                              column
+                              justify-space-between
+                              class="px-3"
                             >
-                              <v-layout
-                                fill-height
-                                column
-                                justify-space-between
-                              >
-                                <p class="mt-4 subheading text-left">
-                                  {{ project.title }}
+                              <p class="mt-4 title text-left">
+                                {{ project.title }}
+                              </p>
+
+                              <div>
+                                <p
+                                  class="body-1 font-weight-light text-left mb-2"
+                                >
+                                  {{ project.description }}
                                 </p>
+                              </div>
 
-                                <div>
-                                  <p
-                                    class="body-1 font-weight-light text-left mb-0"
+                              <div class="align-self-center">
+                                <v-btn
+                                  v-if="project.sourcelink"
+                                  large
+                                  icon
+                                  :href="project.sourcelink"
+                                  target="_blank"
+                                >
+                                  <v-icon class="white--text"
+                                    >mdi-code-tags</v-icon
                                   >
-                                    {{ project.description }}
-                                  </p>
-                                </div>
-
-                                <div class="align-self-center">
-                                  <v-btn
-                                    v-if="project.sourcelink"
-                                    large
-                                    icon
-                                    :href="project.sourcelink"
-                                    target="_blank"
-                                  >
-                                    <v-icon class="white--text"
-                                      >mdi-code-tags</v-icon
-                                    >
-                                  </v-btn>
-                                  <v-btn
-                                    large
-                                    icon
-                                    :href="project.link"
-                                    target="_blank"
-                                  >
-                                    <v-icon class="white--text">mdi-web</v-icon>
-                                  </v-btn>
-                                </div>
-                              </v-layout>
-                            </v-card-title>
+                                </v-btn>
+                                <v-btn
+                                  large
+                                  icon
+                                  :href="project.link"
+                                  target="_blank"
+                                >
+                                  <v-icon class="white--text">mdi-web</v-icon>
+                                </v-btn>
+                              </div>
+                            </v-layout>
+                            <!-- </v-card-title> -->
                           </v-overlay>
                         </v-fade-transition>
                         <template v-slot:placeholder>
@@ -362,7 +354,7 @@ export default {
         },
         {
           image: require("../assets/images/resto-fontaines.png"),
-          title: "Restaurant Le F Des Fontaines",
+          title: "Restaurant Les Fontaines",
           description:
             "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
