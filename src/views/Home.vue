@@ -113,7 +113,7 @@
                     <!-- <v-card-title primary-title class="layout row justify-center mb-8">
                       <div class="display-1">Clément Catel</div>
                     </v-card-title> -->
-                    <v-card-text class="title mt-5">
+                    <v-card-text class="title mt-5" data-aos="fade-left">
                       <p class="font-weight-light py-3 text-justify">
                         Hello! Je suis Clément Catel, développeur web junior.
                         Passionné d'informatique, de nouvelles technologies et
@@ -126,9 +126,9 @@
                       <p class="font-weight-light py-3 text-justify">
                         Je suis titulaire d'un DUT en Informatique. Formation
                         durant laquelle j'ai pu acquérir une première expérience
-                        en tant que développeur Web Frontend et Webdesigner aux
-                        côtés d'Alexandre Maurouard, lors d'un stage de 3 mois
-                        dans sa société : 
+                        en tant que développeur Web et Webdesigner aux côtés
+                        d'Alexandre Maurouard, lors d'un stage de 3 mois dans sa
+                        société :
                         <a
                           href="https://alexandremaurouard.fr/"
                           target="_blank"
@@ -367,6 +367,14 @@ export default {
             "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
           sourcelink: null,
           link: "https://noelsciagecarottage.fr/"
+        },
+        {
+          image: require("../assets/images/goodbail.png"),
+          title: "Goodbail",
+          description:
+            "Goodbail est une application web permettant de générer des quittances de loyer personnalisées au format .pdf",
+          sourcelink: "https://github.com/ClementCatel/quittance",
+          link: "https://good-bail.com/"
         }
       ]
     };
