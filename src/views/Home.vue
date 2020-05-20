@@ -102,7 +102,7 @@
                       <v-avatar
                         size="150"
                         class="elevation-8 mb-5"
-                        data-aos="fade-down"
+                        data-aos="fade-up"
                       >
                         <img
                           src="../assets/images/clementcatel.jpg"
@@ -113,7 +113,7 @@
                     <!-- <v-card-title primary-title class="layout row justify-center mb-8">
                       <div class="display-1">Clément Catel</div>
                     </v-card-title> -->
-                    <v-card-text class="title mt-5" data-aos="fade-left">
+                    <v-card-text class="title mt-5" data-aos="fade-up">
                       <p class="font-weight-light py-3 text-justify">
                         Hello! Je suis Clément Catel, développeur web junior.
                         Passionné d'informatique, de nouvelles technologies et
@@ -169,7 +169,7 @@
           </v-flex>
           <v-flex xs12 sm10 md8 xl6>
             <v-container grid-list-sm fluid class="px-0 mb-12">
-              <v-layout wrap justify-center class="mx-0">
+              <v-layout wrap justify-center class="mx-0" data-aos="fade-up">
                 <v-flex
                   v-for="(project, index) in projects"
                   :key="index"
