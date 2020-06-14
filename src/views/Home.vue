@@ -345,10 +345,26 @@ export default {
       title: "Clément Catel",
       projects: [
         {
+          image: require("../assets/images/data-warehouse.png"),
+          title: "Data-warehouse",
+          description:
+            "Cette homepage est l'intégration d'un design trouvé sur le site dribbble.com. Utilisation des flex-box et du nommage BEM.",
+          sourcelink: "https://github.com/ClementCatel/data-warehouse",
+          link: "https://data-warehouse-homepage.netlify.app/"
+        },
+        {
+          image: require("../assets/images/goodbail.png"),
+          title: "Goodbail",
+          description:
+            "Goodbail est une application web permettant de générer des quittances de loyer personnalisées au format .pdf.",
+          sourcelink: "https://github.com/ClementCatel/quittance",
+          link: "https://good-bail.com/"
+        },
+        {
           image: require("../assets/images/personnal-site.png"),
           title: "Site Portfolio",
           description:
-            "Site portfolio personnel utilisant le framework Vue.js avec Vuetify",
+            "Site portfolio personnel utilisant le framework Vue.js avec Vuetify.",
           sourcelink: "https://github.com/ClementCatel/personnal-site",
           link: "#"
         },
@@ -356,7 +372,7 @@ export default {
           image: require("../assets/images/resto-fontaines.png"),
           title: "Restaurant Les Fontaines",
           description:
-            "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+            "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire.",
           sourcelink: null,
           link: "https://restaurant-les-fontaines.com/"
         },
@@ -364,17 +380,9 @@ export default {
           image: require("../assets/images/nsc.png"),
           title: "Noël Sciage Carrotage",
           description:
-            "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire",
+            "Réalisé lors de mon stage chez Alexandre Maurouard Freelance, en collaboration avec Alexandre Maurouard et un autre stagiaire.",
           sourcelink: null,
           link: "https://noelsciagecarottage.fr/"
-        },
-        {
-          image: require("../assets/images/goodbail.png"),
-          title: "Goodbail",
-          description:
-            "Goodbail est une application web permettant de générer des quittances de loyer personnalisées au format .pdf",
-          sourcelink: "https://github.com/ClementCatel/quittance",
-          link: "https://good-bail.com/"
         }
       ]
     };
